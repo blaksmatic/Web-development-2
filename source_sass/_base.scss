@@ -120,7 +120,6 @@ body {
   border-radius: 50%;
 }
 
-
 #Team {
   padding-top: 5%;
   border-top: dashed;
@@ -135,7 +134,14 @@ body {
   border-top: dashed;
 }
 
-#Foot {
+#Foot-container {
+  background-color: $second-color;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.Foot {
   background-color: $forth-color;
   min-height: 70px;
   padding-top: 3%;
@@ -143,12 +149,17 @@ body {
   animation-name: backgroundColor;
   animation-duration: 6s;
   animation-iteration-count: 300;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
 }
 
 h1 {
   color: $third-color;
 }
-
 
 @keyframes backgroundColor {
   0% {
