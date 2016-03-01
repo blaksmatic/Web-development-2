@@ -1,48 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>MP2 Starter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Link My Prof</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./foundation6_lib/css/foundation.css">
-  <link rel="stylesheet" href="./css/styles.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="./favIcon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favIcon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favIcon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favIcon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favIcon/favicon-96x96.png">
 </head>
 
-<body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/">Web Page</a></li>
-      </ul>
+<body id="Home">
+<div data-sticky-container>
+    <nav id="navbar1" class="top-bar sticky hide-for-small-only" data-sticky data-margin-top="0">
+        <ul id="headmenu1" data-magellan data-magellan-target="Home" class="medium-horizontal menu">
+            <li><a href="#Home">
+                <button id="HomeButton" class="button">Home</button>
+            </a></li>
+            <li><a href="#About">
+                <button id="AboutButton" class="button">About</button>
+            </a></li>
+            <li><a href="#Ideas">
+                <button id="IdeasButton" class="button">Idea</button>
+            </a></li>
+            <li><a href="#Intro">
+                <button id="IntroButton" class="button">IntroVideo</button>
+            </a></li>
+            <li><a href="#Team">
+                <button id="TeamButton" class="button">Team</button>
+            </a></li>
+            <li><a>
+                <button id="login-button" class="success button" type="button" data-open="Login-form"
+                        style="margin-left: 250%">Login
+                </button>
+            </a></li>
+        </ul>
+    </nav>
+    <nav id="navbar3" class=" show-for-small-only top-bar-title">
+        <ul class="vertical menu" data-magellan data-accordion-menu>
+            <li>
+                <a href="#">
+                    <button><i class="fa fa-bars fa-2x"></i></button>
+                </a>
+                <ul class="menu vertical nested">
+                    <li><a href="#Home" class="button">HOME</a></li>
+                    <li><a class="button" href="#About">ABOUT</a></li>
+                    <li><a class="button" href="#Ideas">IDEAS</a></li>
+                    <li><a class="button" href="#Team">TEAM</a></li>
+                    <li><a class=" primary button" data-open="Login-form" href="#">LOGIN</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="reveal" id="Login-form" data-reveal>
+        <form>
+            <div class="row">
+                <div class="medium-6 columns">
+                    <label>Username
+                        <input type="text" placeholder="Username">
+                    </label>
+                </div>
+                <div class="medium-6 columns">
+                    <label>Password
+                        <input type="password" placeholder="Password">
+                    </label>
+                </div>
+            </div>
+        </form>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <button class=" success button left"> SUBMIT</button>
+        <button class=" button"> JOIN</button>
+        <a class="float-right" href="#"> Forget your password?</a>
     </div>
-  </nav>
-	<div class="row text-center">
-		<h3>Hello. It's Me.</h3>
-	</div>
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
-    </div>
-  </section>
+</div>
 
-  <!-- Scripts -->
-  
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation6_lib/js/foundation.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script>
+
+<section id="About" data-magellan-target="About" class="row bodyStart">
+    <div class="alert columns small-12 medium-6 text-center">
+        <h1 style="font-family: Oswald, sans-serif">
+            What is LinkMyProf
+        </h1>
+        <p>
+            The project LinkMyProf aims at helping people look for all kinds of information about professors:
+            their research interests, their emails, their publications, what kind of PHD students they are looking for
+            currently, etc. </p>
+        <p>
+            We believe that this kind of assistance is crucial when a student starts to find a interesting research
+            topic or have a problem to decide which university they should attend.
+            They can search their matches in our data base and email the professors directly. Professors, on the other
+            hand, can post information on their personal webpage and deliver it to all student interested in his
+            project.</p>
+        <p>
+            It is the combination of LinkedIn and Rate My Professor.
+        </p>
+    </div>
+    <div class="alert columns small-12 medium-6 text-center">
+        <h1 class="text-center" style="font-family: Oswald, sans-serif">How do we work</h1>
+        <p> To get the data we need, we will firstly write a script to extract professor’s information from the
+            websites. </p>
+        <p>We need professor’s name, university address, department and email address and their research interest at
+            least. Also, we can put their personal website in our database. We will get all of these data from
+            universities’ official websites where they post faculty and staff information.</p>
+        <p>As for the advanced function, we currently have the following ideas:</p>
+        <p>Firstly, I believe our information extraction algorithm will become our first advanced function. Since
+            university’s websites usually have different structures, we need to write script dealing with these
+            different situations.
+        </p>
+        <p>Secondly, we are considering auto match students and professor’s research. It should not sole rely on key
+            word search, but data mining algorithms that use Cosine distance as the base, which are still to be
+            determined.</p>
+    </div>
+</section>
+
+<section id="Ideas" data-magellan-target="Ideas" class="row text-center">
+    <div class="hide-for-small-only medium-9 medium-centered text-center">
+        <h1>Ideas: Under Construction</h1>
+        <div class="orbit" data-orbit>
+            <ul class="orbit-container">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i
+                        class="fa fa-angle-left fa-2x"></i></button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i
+                        class="fa fa-angle-right fa-2x"></i></button>
+                <li class="is-active orbit-slide">
+                    <img class="orbit-image" src="./media/Prof1.jpg">
+                    <figcaption class="orbit-caption">First Professor</figcaption>
+                </li>
+                <li class="orbit-slide">
+                    <img class="orbit-image" src="./media/Prof2.jpg">
+                    <figcaption class="orbit-caption">Second Professor</figcaption>
+                </li>
+                <li class="orbit-slide">
+                    <img class="orbit-image" src="./media/Prof3.jpg">
+                    <figcaption class="orbit-caption">Third Professor</figcaption>
+                </li>
+                <li class="orbit-slide">
+                    <img class="orbit-image" src="./media/Prof4.jpg">
+                    <figcaption class="orbit-caption">Last Professor</figcaption>
+                </li>
+            </ul>
+            <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
+                        class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            </nav>
+        </div>
+    </div>
+    <div class="show-for-small-only small-12 text-center columns">
+        <img class="orbit-image" src="./media/Prof1.jpg">
+        <img class="orbit-image" src="./media/Prof2.jpg">
+        <img class="orbit-image" src="./media/Prof3.jpg">
+        <img class="orbit-image" src="./media/Prof4.jpg">
+    </div>
+</section>
+<section id="Intro" data-magellan-target="Intro" class="row">
+    <div class="hide-for-small-only medium-9 medium-centered flex-video columns">
+        <video id=Trailer class=trailer width="1280" height= auto  controls allowfullscreen>
+            <source src="./media/WhatisLinkedIn.mp4">
+        </video>
+    </div>
+</section>
+
+<section id="Team" data-magellan-target="Team" class="row text-center">
+    <h1 style="padding-bottom: 3%">Meet Our Team</h1>
+    <div class="columns small-12 medium-6 large-3">
+        <div class="PeoplePic">
+            <img class="imgCircle" src="./media/Person1.jpg">
+        </div>
+        <h2>Yixiang</h2>
+        <p>This guy is not Lazy, but forgets to leave anything</p>
+    </div>
+    <div class="columns small-12 medium-6 large-3 ">
+        <div class="PeoplePic">
+            <img class="imgCircle" src="./media/Person2.jpg">
+        </div>
+        <h2>Yuhang</h2>
+        <p>This guy is Lazy, so we know nothing about him</p>
+    </div>
+    <div class="columns small-12 medium-6 large-3 ">
+        <div class="PeoplePic">
+            <img class="imgCircle" src="./media/Person3.jpeg">
+        </div>
+        <h2>Liu</h2>
+        <p>We Know nothing about this guy</p>
+    </div>
+    <div class="columns small-12 medium-6 large-3">
+        <div class="PeoplePic">
+            <img class="imgCircle" src="./media/Person4.png">
+        </div>
+        <h2>Xin</h2>
+        <p>This gut is lazy. He leaves nothing here</p>
+    </div>
+</section>
+
+<section id="Foot">
+    <div class="small-12 medium-6 columns text-center">
+        <h2 style="font-family: Oswald, sans-serif; font-size: 20px">Designed by Yixiang</h2>
+    </div>
+    <div class="small-12 medium-6 columns text-center">
+        <i class="fa fa-facebook-square fa-2x"></i>
+        <i class="fa fa-twitter-square fa-2x"></i>
+        <i class="fa fa-tumblr-square fa-2x"></i>
+    </div>
+</section>
+
+
+<!-- Scripts -->
+
+<script src="./lib/jquery-2.1.3.min/index.js"></script>
+<script src="./foundation6_lib/js/foundation.min.js"></script>
+<script src="./js/script.js"></script>
+<script>
     $(document).foundation();
-  </script>
-  <script src="http://localhost:35729/livereload.js"></script>
+</script>
+<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

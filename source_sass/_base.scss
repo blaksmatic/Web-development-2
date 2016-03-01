@@ -1,1 +1,166 @@
 // Add any custom Sass & CSS here
+body {
+  background-color: $first-color;
+  background-image: url("../media/LinkmyProf.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.top-bar {
+  min-height: 15px;
+  display: inline-block;
+  background-color: $first-color;
+}
+
+#headmenu1 {
+  background-color: $first-color;
+}
+
+#navbar1 {
+  width: 100%;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  @include transition(0.4);
+  &.small {
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    @include blur(0.8);
+    a {
+      padding-top: 0;
+    }
+  }
+}
+
+#navbar3 {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: $first-color;
+  opacity: 0.95;
+  @include transition(0.4);
+  a {
+    margin-right: 2.2%;
+  }
+}
+
+#Mobile-Title {
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.button {
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+  background-color: $first-color;
+  margin-bottom: 0;
+  @include transition(0.4);
+  &.smallb {
+    padding: 9px 9px 9px 9px;
+    font-size: 15px;
+  }
+}
+
+.top-bar-title {
+  i {
+    background-color: $first-color;
+    margin: 0;
+    border: 0;
+  }
+}
+
+.dropdown-pane {
+  padding-right: 50px;
+  width: 280px;
+  height: auto;
+  display: inline-block;
+  input {
+    width: 100px;
+  }
+  &.row {
+    width: 200px;
+    margin-left: 0;
+  }
+  div {
+    padding-left: 0;
+  }
+}
+
+.menu {
+  margin: 0;
+}
+
+.bodyStart {
+  margin-top: 45%;
+  padding-top: 5%;
+  background-color: $first-color;
+  border-bottom: dashed;
+  border-color: $third-color;
+}
+
+#Ideas {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  //vertically center sth
+  background-color: $first-color;
+}
+
+.imgCircle {
+  width: 70%;
+  border-radius: 50%;
+}
+
+
+#Team {
+  padding-top: 5%;
+  border-top: dashed;
+  border-color: $third-color;
+  background-color: $first-color;
+  padding-bottom: 5%;
+}
+
+#Intro {
+  background-color: $first-color;
+  border-color: $third-color;
+  border-top: dashed;
+}
+
+#Foot {
+  background-color: $forth-color;
+  min-height: 70px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  animation-name: backgroundColor;
+  animation-duration: 6s;
+  animation-iteration-count: 300;
+}
+
+h1 {
+  color: $third-color;
+}
+
+
+@keyframes backgroundColor {
+  0% {
+    background-color: $first-color;
+  }
+  25% {
+    background-color: $forth-color;
+  }
+  50% {
+    background-color: $third-color;
+  }
+  100% {
+    background-color: $first-color;
+  }
+}
