@@ -3,21 +3,6 @@ var $window = $(window)
 var $document = $(document)
 
 
-/*This function is resizing the navbar*/
-$document.ready(function () {
-    $window.scroll(function () {
-        var CurrentPosition = $document.scrollTop();
-        if (CurrentPosition > 30) {
-            $('.button').addClass('smallb');
-            $('#login-button').removeClass('success');
-        } else {
-            $('.button').removeClass('smallb');
-            $('#login-button').addClass('success');
-        }
-    });
-});
-
-
 /*This function is position indicator*/
 $document.ready(function () {
     var homeDistance = $("#Home").offset().top;
